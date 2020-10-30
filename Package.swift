@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "HAP",
     products: [
-        .library(name: "HAP", targets: ["HAP"]),
+        .library(name: "HAP", type: .dynamic, targets: ["HAP"]),
         .executable(name: "hap-server", targets: ["hap-server"]),
     ],
     dependencies: [
