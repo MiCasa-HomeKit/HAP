@@ -38,6 +38,6 @@ let package = Package(
 #endif
 
 #if os(Linux)
-    package.dependencies.append(.package(url: "https://github.com/Bouke/NetService.git", .branch("master")))
+    package.dependencies.append(.package(url: "https://github.com/MiCasa-HomeKit/NetService.git", .branch("master")))
     package.targets.first(where: { $0.name == "HAP" })!.dependencies.append("NetService")
 #endif
